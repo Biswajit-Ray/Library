@@ -2,17 +2,25 @@ console.log("Working Properly!");
 
 const myLibrary = [];
 
-function book(title, author, pages){
+function Book(title, author, pages, id){
     this.title= title;
     this.author= author;
     this.pages= pages;
     this.readStatus= false;
+    this.id= id;
 }
 
 function Logger(title, author, pages){
-    let bookName= crypto.randomUUID();
-    console.log(bookName);
-    bookName= new book (title, author, pages);
-    myLibrary.push(bookName);
-    console.log(myLibrary);
+    let uniqueID= crypto.randomUUID();
+    console.log(uniqueID);
+    let book = Book(title, author, pages, id);
+    console.log(book);
+    myLibrary.push(book);
+    console.log(myLibrary[-1]);
+}
+
+function displayer(){
+    for(let item in myLibrary ){
+        console.log(bookName.author);
+    }
 }
