@@ -8,11 +8,12 @@
 }
 
 body {
-    background-color: #121212;
+    background-color: #121212; /* Dark theme for contrast */
     color: #F2F0EF;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Layout Containers */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -45,16 +46,18 @@ body {
     letter-spacing: 1px;
 }
 
+/* The Grid System */
 .library-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 25px;
 }
 
+/* Refined Card Design */
 .card {
     display: flex;
     flex-direction: column;
-    background-color: #F2F0EF;
+    background-color: #F2F0EF; /* Your original cream color */
     color: #333;
     padding: 20px;
     border-radius: 12px;
@@ -80,7 +83,7 @@ body {
 .author {
     font-style: italic;
     color: #555;
-    margin-bottom: auto; 
+    margin-bottom: auto; /* Pushes content below to the bottom */
 }
 
 .low-bar {
@@ -93,6 +96,7 @@ body {
     font-size: 0.85rem;
 }
 
+/* UI Elements */
 .add-book-btn {
     background-color: salmon;
     color: white;
