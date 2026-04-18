@@ -13,12 +13,14 @@
         <button class="add-book-btn" id="newBookBtn" command="show-modal" commandfor="bookLoggerForm">+ Add Book</button>
 
         <dialog id="bookLoggerForm">
-            <form action="#" method="post">
-                <label for="title">Title:</label><input id="title" type="text">
-                <label for="author">Author:</label><input id="author" type="text">
-                <label for="pages"></label><input id="pages" type="number">
-                <button type="submit">Submit</button>
-            </form>
+            <div class="modal-content">
+                <form >
+                    <div class="form-element"><label for="title">Title:</label><input id="title" type="text"></div>
+                    <div class="form-element"><label for="author">Author:</label><input id="author" type="text"></div>
+                    <div class="form-element"><label for="pages">Page Count:</label><input id="pages" type="number"></div>
+                    <div class="form-element"><button type="submit">Submit</button></div>
+                </form>
+            </div>
         </dialog>
     </header>
 

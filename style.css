@@ -31,6 +31,47 @@ body {
     color: salmon;
 }
 
+dialog {
+    border: none;
+    background: none;
+    margin: auto;
+}
+
+form {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 15vh;
+    aspect-ratio: 5/6;
+    height: 45vh;
+    background: white;
+    padding: 20px;
+    border: 0.6vh solid rgb(224, 201, 166);
+    border-radius: 1vh;
+}
+
+.form-element {
+    display: flex;
+    align-items: center;
+    gap: 0.3vw;
+}
+
+input {
+    flex-grow: 1;
+}
+
+.form-element:has(button[type= "submit"]){
+    height: clamp( 49px, auto, 100px );
+}
+
+
+button[type= "submit"] {
+    background-color: salmon;
+    border-radius: 0.8vh;
+    width: 10vw;
+    padding: 1.5vw;
+    margin-left: auto;
+    margin-top: auto;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
