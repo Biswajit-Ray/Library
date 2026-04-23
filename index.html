@@ -15,10 +15,10 @@
         <dialog id="bookLoggerForm">
             <div class="modal-content">
                 <form >
-                    <div class="form-element"><label for="title">Title:</label><input id="title" type="text"></div>
-                    <div class="form-element"><label for="author">Author:</label><input id="author" type="text"></div>
-                    <div class="form-element"><label for="pages">Page Count:</label><input id="pages" type="number"></div>
-                    <div class="form-element"><button type="submit">Submit</button></div>
+                    <div class="form-element"><label for="title">Title:</label><input id="title" type="text" required></div>
+                    <div class="form-element"><label for="author">Author:</label><input id="author" type="text" required></div>
+                    <div class="form-element"><label for="pages">Page Count:</label><input id="pages" type="number" required></div>
+                    <div class="form-element"><button type="submit" id="submit">Submit</button></div>
                 </form>
             </div>
         </dialog>
@@ -31,15 +31,6 @@
 
         <section class="library-grid" id="libraryGrid">
             
-            <div class="card">
-                <p class="title">The Great Gatsby</p>
-                <p class="author">F. Scott Fitzgerald</p>
-                <div class="low-bar">
-                    <p class="pages">180 pages</p>
-                    <p class="readStatus read-false">Not Read</p>
-                </div>
-            </div>
-
         </section>
     </main>
 

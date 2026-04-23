@@ -102,7 +102,6 @@ button[type= "submit"] {
     min-height: 180px;
     border-left: 8px solid salmon;
     transition: transform 0.2s ease;
-    cursor: pointer;
 }
 
 .card:hover {
@@ -155,5 +154,24 @@ button[type= "submit"] {
     background: #e0e0e0;
 }
 
-.read-false { color: #d9534f; }
-.read-true { color: #5cb85c; }
+.read-false { background-color: #d9534f; }
+.read-true { background-color: #5cb85c; }
+
+.read-false, .read-true {
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 74px;
+}
+
+.remove {  
+    transform: translateY(10px); 
+    background-color:salmon; 
+    border: none; 
+    margin: 10px; 
+    border-radius: 10px; 
+    width: fit-content; 
+    padding: 6px 12px 6px 12px; 
+    color: white;
+    cursor: pointer;
+}
